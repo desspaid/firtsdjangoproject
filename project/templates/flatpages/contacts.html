@@ -1,0 +1,16 @@
+{% extends 'flatpages/default.html' %}
+ 
+{% block title %}
+{{ flatpage.title }}
+{% endblock title %}
+ 
+{% block content %}
+    <h2>{{ flatpage.title }}</h2>
+    <hr>
+    <h3>Мои контакты:</h3>
+{{ flatpage.content }}
+<br/>
+<img src="https://i.pinimg.com/736x/10/0f/a2/100fa255ae114d479fd64a9f280317d5--cutest-pets-the-cutest.jpg"/>
+{% endblock content %}
+
+
