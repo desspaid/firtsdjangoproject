@@ -8,6 +8,8 @@ Post
     
 {% block content %}
 <h1>{{ post.title }}</h1>
+<a href="/news/news/{{ post.pk }}/edit">Редактировать</a>
+<a href="/news/news/{{ post.pk }}/delete">Удалить</a>
 <p>Дата публикации: {{post.date_time}}</p>
 <p>{{post.text|censor}}</p>
 <a href="/news/">К списку статей...</a>
