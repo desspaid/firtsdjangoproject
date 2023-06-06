@@ -1,0 +1,15 @@
+{% extends 'flatpages/default.html' %}
+
+{% block content %}
+
+<form method="post" action="{% url 'login' %}">
+{% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Логин"/>
+    <input type="hidden" name="next" value="{{ next }}"/>
+    <a href="/accounts/singup">Регистрация</a>
+    </form>
+
+{% endblock %}
+
+

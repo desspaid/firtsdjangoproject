@@ -33,6 +33,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="/contacts/">Contact</a>
                         </li>
+                        {% if perms.simpleapp.add_product %}
                         <li class="nav-item">
                             <a class="nav-link" href="/news/articles/create/">Добавить статью</a>
                         </li>
@@ -41,6 +42,10 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/admin/">Admin-панель</a>
+                        </li>
+                        {% endif %}
+                        <li class="nav-item">
+                            <a class="nav-link" href="/accounts/login/">Вход</a>
                         </li>
                     </ul>
                 </div>
